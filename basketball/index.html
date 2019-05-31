@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Basketball battles</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="./assets/style/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <section id="playground-search-box" class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Basketball battles</h1>
+                <p class="lead text-muted">
+                    Basketball Battle is a text based basketball game<br />
+                    where you'll get to participate in thrilling three point contests.
+                </p>
+
+                <form class="search-player">
+                    <div class="input-group">
+                        <input type="text" id="name" class="form-control form-control-lg"
+                            placeholder="Type player's name...">
+                    </div>
+                    <button type="submit" id="search-button" class="btn btn-primary btn-lg btn-block"
+                        disabled>Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="playground">
+            <div class="container">
+                <div id="playground-placeholder" class="alert alert-info">
+                    Start by searching player's name.
+                    </br>
+                    Ex:FirstName LastName
+                </div>
+
+                <div id="playground-placeholder-playernames" class="alert alert-info">
+                    NBA Players:
+                    </br>
+                    Kyrie Irving
+                    </br>
+                    James Harden
+                    </br>
+                    Lebron James
+                    </br>
+                    Draymond Green
+                    </br>
+                    Joel Embiid
+                    </br>
+                    Stephen Curry
+                    </br>
+                    Kevin Durant
+                    </br>
+                    Damian Lillard
+                    </br>
+                    Kawhi Leonard
+                    </br>
+                    DeMar DeRozan
+                    </br>
+                    Jimmy Butler
+                    </br>
+                    Anthony Davis
+                    </br>
+                    Klay Thompson
+                </div>
+
+
+                <div id="playground-error" class="alert alert-danger is-hidden">
+                    Player not found, please try again.
+                </div>
+
+                <div id="playground-error1" class="alert alert-danger is-hidden">
+                    Cannot pick the same player twice!
+                </div>
+
+
+                <div id="playground-cards" class="card-deck is-hidden text-center">
+                    <div id="playground-players" class="row" style="width:1200px"></div>
+                    <div id="playground-loader" class="is-hidden" style="margin: 0 auto">
+                        <div class="spinner-grow text-info" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+                    <button type="submit" id="compare-button" class="btn btn-outline-success btn-lg btn-block">Start
+                        three point shooting contest!</button>
+                    <button id="try-again" class="btn btn-outline-info btn-lg btn-block is-hidden">Try
+                        again</button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer text-muted">
+            <div class="container">
+                <p>© 2019 Basketball battles - Cosmin Lautaru</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+/* Helpers */
+.is-hidden {
+  display: none;
+}
+
+/* Styles */
+.search-player {
+  width: 650px;
+  margin: 0 auto;
+}
+
+.search-player .btn {
+  margin-top: 10px;
+}
+
+.playground {
+  margin-bottom: 2rem;
+}
+
+.playground .row {
+  width: 100%;
+}
+
+.playground .card {
+  max-width: 50%;
+}
+.playground .player-cards{
+  width: 700px;
+}
